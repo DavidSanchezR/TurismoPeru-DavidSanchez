@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="icon" href="../assets/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <div id="contenedor_principal">
+
+        <header>
+
+            <a href="../index.html"><img src="../assets/Logo_Peru.svg" class="logo"></a>
+            <nav>
+                <ul>
+                    <li class="menu"><a href="../index.html">Acerca de</a></li>
+                    <li class="menu"><a href="atractivos.html">Atractivos</a></li>
+                    <li class="menu"><a href="./eventos.html">Eventos</a></li>
+                    <li class="menu"><a href="./experiencias.html">Experiencias</a></li>
+                    <li class="menu"><a href="./contacto.html">Contáctanos</a></li>
+                </ul>
+            </nav>
+
+        </header>
+
+        <div id="banner">
+            <div class="contenido_imagen_fondo">
+                <img src="../assets/choquequirao-trekking.jpg" alt="choquequirao" class="imagen_fondo">
+                <div class="imagen_titulo">
+                    <h1 class="titulo_principal">Planifica lo que tanto quieres vivir</h1>
+                </div>
+            </div>   
+        </div>        
+        
+        <aside id="aside_left">
+
+        </aside>
+
+        <section id="contenido">
+
+            <div class="contenido_principal">
+
+                <div class="seccion__titulo">
+                    <h1 class="titulo">Contáctanos</h1>
+                    <hr>
+                    <p class="subtitulo">Para contactarnos, deja tus datos en el formulario</p>
+                </div>
+                <div class="contenedor_formulario">
+                    <form action="" method="get" enctype="text/plain" class="formulario">
+                        <fieldset>
+                            <legend>Llene sus datos</legend>
+                            <br>
+                            <div>
+                                <label for="ubicacion">Seleccione su ubicación: </label>
+                                <select id="ubicacion">
+                                    <option value="PE"> Perú</option>
+                                    <option value="AR"> Argetina</option>
+                                    <option value="BO"> Bolivia</option>
+                                    <option value="CH"> Chile</option>
+                                    <option value="CO"> Colombia</option>
+                                    <option value="EC"> Ecuador</option>
+                                    <option value="UR"> Uruguay</option>
+                                    <option value="PA"> Paraguay</option>
+                                    <option value="VE"> Venezuela</option>
+                                </select>
+                            </div>
+                            <br>
+                            <div>
+                                <label for="nombre">Ingrese su Nombre: </label>
+                                <input id="nombre" type="text" placeholder="nombre">
+                            </div>
+                            <br>
+                            <div>
+                                <label for="correo">Ingrese su correo: </label>
+                                <input id="correo" type="email" placeholder="correo@dominio.com">
+                            </div>
+                            <br>
+                            <div>
+                                <label for="info">¿Cómo podemos ayudarte?</legelabelnd>
+                                    <textarea id="info" maxlength="300" rows="5" cols="50"
+                                        placeholder="Escriba su consulta aquí"></textarea>
+                            </div>
+                            <br>
+                            <div>
+                                <input type="checkbox" name="aceptarPrivadidad" value="1">
+                                <label for="aceptarPrivadidad">Acepto Aviso de Privacidad</label>
+                            </div>
+                            <br><br>
+                            <div class="botones">
+                                <input type="reset" value="Limpiar">
+                                <input class="btn" type="submit" value="Enviar">
+                            </div>
+                        </fieldset>        
+                    </form>
+                </div>
+
+            </div>
+
+        </section>
+
+        <aside id="aside_right">
+
+        </aside>
+
+        <footer>
+            <hr>
+            <p>
+                Copyright © Promperu - David Sanchez
+            </p>
+        </footer>
+    
+
+</body>
+
+</html>
