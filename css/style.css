@@ -59,6 +59,12 @@ footer p {
     padding: .8rem;
 }
 
+.redes_sociales_banner li a svg{
+    width: 33px;
+    height: 33px;
+    fill: #fff;
+}
+
 .logo {
     display: inline-block;
     width: 100px;
