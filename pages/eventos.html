@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -32,7 +34,7 @@
 
         </header>
 
-        <div id="banner">
+        <div id="banner" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="2000">
             <div class="contenido_imagen_fondo">
                 <img src="../assets/carnaval-cajamarca.jpg" alt="carnaval-cajamarca" class="imagen_fondo">
                 <div class="imagen_titulo">
@@ -56,28 +58,28 @@
                 <article class="listado_evento">
 
                     <div class="cartilla">
-                        <img class="evento" src="../assets/eventos/7-junio-peru-bandera.jpg" alt="bandera-peru">
+                        <img class="evento slide-fwd-center" src="../assets/eventos/7-junio-peru-bandera.jpg" alt="bandera-peru">
                         <h2 class="evento__titulo">Día de la bandera</h2>
                         <br>
                         <p class="evento__info">Se conmemora cada 7 de junio a nivel nacional.</p>
                     </div>
     
                     <div class="cartilla">
-                        <img class="evento" src="../assets/eventos/21-junio-año-nuevo-andino.jpg" alt="anno-nuevo-andino">
+                        <img class="evento slide-fwd-center" src="../assets/eventos/21-junio-año-nuevo-andino.jpg" alt="anno-nuevo-andino">
                         <h2 class="evento__titulo">Año Nuevo Andino</h2>
                         <br>
                         <p class="evento__info">Ofrendando al Sol cada 21 de junio.</p>
                     </div>
     
                     <div class="cartilla">
-                        <img class="evento" src="../assets/eventos/24-junio-inti-raymi.jpg" alt="inti-raymi">
+                        <img class="evento slide-fwd-center" src="../assets/eventos/24-junio-inti-raymi.jpg" alt="inti-raymi">
                         <h2 class="evento__titulo">Inti Raymi</h2>
                         <br>
                         <p class="evento__info">Fortaleza de Sacsayhuamán</p>
                     </div>
     
-                    <div class="cartilla">
-                        <img class="evento" src="../assets/eventos/24-julio-dia-del-pisco.jpg" alt="pisco-peruano">
+                    <div class="cartilla slide-fwd-center">
+                        <img class="evento " src="../assets/eventos/24-julio-dia-del-pisco.jpg" alt="pisco-peruano">
                         <h2 class="evento__titulo">Día Nacional del Pisco</h2>
                         <br>
                         <p class="evento__info">24 de Julio</p>
@@ -101,6 +103,10 @@
         </footer>
 
     </div>
+
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 

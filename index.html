@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -32,7 +34,7 @@
 
         </header>
 
-        <div id="banner">
+        <div id="banner" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="2000">
             <div class="contenido_imagen_fondo">
                 <img src="./assets/Ceviche-mixto.jpg" alt="Ceviche-mixto" class="imagen_fondo">
                 <div class="imagen_titulo">
@@ -53,7 +55,7 @@
                     <p class="subtitulo">Maravíllate con la diversidad de nuestra riqueza natural, cultural e histórica.
                     </p>
                 </div>
-                <div>
+                <div id="contenedor_mapa">
                     <iframe class="mapa"
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8065928.748978428!2d-79.51510158241177!3d-9.20472180304426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c850c05914f5%3A0xf29e011279210648!2zUGVyw7o!5e0!3m2!1ses-419!2spe!4v1652216348579!5m2!1ses-419!2spe"
                         loading="lazy"
@@ -76,6 +78,10 @@
         </footer>
 
     </div>
+
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 

@@ -230,7 +230,7 @@ footer p {
     text-align: center;
     font-family: 'Open Sans', sans-serif;
     font-weight: 500;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 /* Estilos de Contáctanos */
@@ -260,6 +260,25 @@ fieldset label {
 .btn {
     background-color: red;
     color: white;
+}
+
+#contenedor_mapa iframe,
+.experiencia_contenedor img
+{
+    -webkit-transition:all .9s ease; /* Safari y Chrome */
+    -moz-transition:all .9s ease; /* Firefox */
+    -o-transition:all .9s ease; /* IE 9 */
+    -ms-transition:all .9s ease; /* Opera */
+}
+
+#contenedor_mapa:hover iframe,
+.experiencia_contenedor:hover img
+{
+-webkit-transform:scale(0.9);
+-moz-transform:scale(0.9);
+-ms-transform:scale(0.9);
+-o-transform:scale(0.9);
+transform:scale(0.9);
 }
 
 /* Fin de Estilos de Contáctanos */
@@ -377,7 +396,7 @@ fieldset label {
         text-align: center;
         font-family: 'Open Sans', sans-serif;
         font-weight: 500;
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
 
     /* Fin de estilos de Experiencias */
