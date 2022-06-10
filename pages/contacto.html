@@ -95,54 +95,63 @@
 
             <div class="col-8 d-flex flex-column mt-5">
                 <div class="seccion__titulo">
-                    <h1 class="titulo">Eventos 2022</h1>
+                    <h1 class="titulo">Para contactarnos, deja tus datos en el formulario</h1>
                 </div>
                 <div class="row justify-content-center mb-3">
 
-                    <form action="" method="get" enctype="text/plain" class="formulario">
+                    <form action="" method="get" enctype="text/plain">
+
                         <fieldset>
+
                             <legend>Llene sus datos</legend>
-                            <br>
-                            <div>
-                                <label for="ubicacion">Seleccione su ubicación: </label>
-                                <select id="ubicacion">
-                                    <option value="PE"> Perú</option>
-                                    <option value="AR"> Argetina</option>
-                                    <option value="BO"> Bolivia</option>
-                                    <option value="CH"> Chile</option>
-                                    <option value="CO"> Colombia</option>
-                                    <option value="EC"> Ecuador</option>
-                                    <option value="UR"> Uruguay</option>
-                                    <option value="PA"> Paraguay</option>
-                                    <option value="VE"> Venezuela</option>
-                                </select>
+                            <div class="mb-3 row">
+                                <label for="ubicacion" class="col-sm-3 col-form-label">Seleccione su ubicación: </label>
+                                <div class="col-sm-8">
+                                    <select id="ubicacion"  class="form-select" aria-label="Default select example">
+                                        <option value="PE"> Perú</option>
+                                        <option value="AR"> Argetina</option>
+                                        <option value="BO"> Bolivia</option>
+                                        <option value="CH"> Chile</option>
+                                        <option value="CO"> Colombia</option>
+                                        <option value="EC"> Ecuador</option>
+                                        <option value="UR"> Uruguay</option>
+                                        <option value="PA"> Paraguay</option>
+                                        <option value="VE"> Venezuela</option>
+                                    </select>
+                                </div>
                             </div>
-                            <br>
-                            <div>
-                                <label for="nombre">Ingrese su Nombre: </label>
-                                <input id="nombre" type="text" placeholder="nombre">
+
+                            <div class="mb-3 row">
+                                <label for="nombre" class="col-sm-3 col-form-label">Ingrese su Nombre:</label>
+                                <div class="col-sm-8">
+                                  <input type="text" class="form-control" id="nombre">
+                                </div>
                             </div>
-                            <br>
-                            <div>
-                                <label for="correo">Ingrese su correo: </label>
-                                <input id="correo" type="email" placeholder="correo@dominio.com">
+
+                            <div class="mb-3 row">
+                                <label for="correo" class="col-sm-3 col-form-label">Ingrese su correo:</label>
+                                <div class="col-sm-8">
+                                  <input type="email" class="form-control" id="correo" placeholder="correo@dominio.com">
+                                </div>
                             </div>
-                            <br>
-                            <div>
-                                <label for="info">¿Cómo podemos ayudarte?</legelabelnd>
-                                    <textarea id="info" maxlength="300" rows="5" cols="50"
-                                        placeholder="Escriba su consulta aquí"></textarea>
+
+                            <div class="mb-3">
+                                <label for="info" class="form-label">¿Cómo podemos ayudarte?</label>
+                                <textarea class="form-control" id="info" rows="4"></textarea>
                             </div>
-                            <br>
-                            <div>
-                                <input type="checkbox" name="aceptarPrivadidad" value="1">
-                                <label for="aceptarPrivadidad">Acepto Aviso de Privacidad</label>
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="aceptarPrivadidad">
+                                <label class="form-check-label" for="aceptarPrivadidad">
+                                    Acepto Aviso de Privacidad
+                                </label>
+                              </div>
+
+                            <div class="mt-4 d-flex justify-content-end">
+                                <button type="reset" class="btn btn-warning">Limpiar</button>
+                                <button type="button" class="btn btn-danger ms-2">Enviar</button>
                             </div>
-                            <br><br>
-                            <div class="botones">
-                                <input type="reset" value="Limpiar">
-                                <input class="btn" type="submit" value="Enviar">
-                            </div>
+
                         </fieldset>        
                     </form>
 
