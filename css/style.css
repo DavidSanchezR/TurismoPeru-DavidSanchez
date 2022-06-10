@@ -41,7 +41,7 @@ nav ul {
     align-self: center;
 }
 
-footer {
+/* footer {
     grid-area: pie;
     background-color: #D52B1E;
     display: flex;
@@ -57,6 +57,14 @@ footer p {
     color: white;
     display: inline-block;
     padding: .8rem;
+} */
+
+footer {
+    background-color: #D52B1E;
+}
+
+footer span {
+    color: white;
 }
 
 .redes_sociales_banner li a svg{
@@ -110,18 +118,15 @@ footer p {
 .contenido_imagen_fondo{
     max-width: 100%;
     position: relative;
-
-
 }
 
 .imagen_fondo{
     width: 100%;
-    /*background-size: cover;*/
 }
 
 .imagen_titulo {
     position: absolute;
-    top: 150px;
+    top: 15rem;
     left: 50px;
     font-family: 'Open Sans', sans-serif;
     font-weight: 500;
@@ -270,7 +275,7 @@ fieldset label {
 }
 
 .btn {
-    background-color: red;
+    background-color: #D52B1E;
     color: white;
 }
 
@@ -442,3 +447,20 @@ transform:scale(0.9);
     }
 
 }
+
+
+a.nav-link{
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    margin: 0 0.8rem;
+    color: black;
+}
+
+a.nav-link:hover{
+    color: #D52B1E;    
+}
+
+
+
