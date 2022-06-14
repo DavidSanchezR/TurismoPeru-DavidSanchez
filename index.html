@@ -24,7 +24,7 @@
     <nav class="navbar navbar-expand-lg">
       <div class="container d-flex flex-row justify-content-center">
         <a class="navbar-brand" href="index.html"><img src="./assets/Logo_Peru.svg" class="logo"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        <button class="navbar-toggler border border-danger navbar-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
           aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -87,33 +87,31 @@
   
   <div class="container-fluid">
     <div class="row">
-      <div class="col-2">
+      <div class="col-md-2">
       </div>
-      <div class="col-8 d-flex flex-column mt-5">
+      <div class="col-md-8 d-flex flex-column mt-5">
         <div class="seccion__titulo">
           <h1 class="titulo">Perú en el mundo</h1>
           <p class="subtitulo">Maravíllate con la diversidad de nuestra riqueza natural, cultural e histórica.
           </p>
         </div>
-        <div class="d-flex justify-content-center">
+        <div class="d-flex justify-content-center contenedor__mapa">
           <iframe class="mapa"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8065928.748978428!2d-79.51510158241177!3d-9.20472180304426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c850c05914f5%3A0xf29e011279210648!2zUGVyw7o!5e0!3m2!1ses-419!2spe!4v1652216348579!5m2!1ses-419!2spe"
             loading="lazy" referrerpolicy="no-referrer-when-downgrade">
           </iframe>
         </div>
       </div>
-      <div class="col-2">
+      <div class="col-md-2">
       </div>
     </div>
   </div>
 
-  <div class="container">
-    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+  <div class="container-fluid">
+    <footer class="d-flex flex-wrap justify-content-center justify-content-md-between align-items-center py-3 my-4 border-top">
       <div class="col-md-4 d-flex align-items-center">
-        <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
-          <svg class="bi" width="30" height="24">
-            <use xlink:href="#bootstrap"></use>
-          </svg>
+        <a href="index.html" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+          <img src="./assets/Logo_Peru.svg" class="logo_pie">
         </a>
         <span>© 2022 Promperu - David Sanchez</span>
       </div>
@@ -142,89 +140,6 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>
-
-<!-- 
-
-  <header>
-    <a href="index.html"><img src="./assets/Logo_Peru.svg" class="logo"></a>
-      <nav>                
-          <ul>
-              <li class="menu"><a href="index.html">Acerca de</a></li>
-              <li class="menu"><a href="./pages/atractivos.html">Atractivos</a></li>
-              <li class="menu"><a href="./pages/eventos.html">Eventos</a></li>
-              <li class="menu"><a href="./pages/experiencias.html">Experiencias</a></li>
-              <li class="menu"><a href="./pages/contacto.html">Contáctanos</a></li>
-          </ul>
-      </nav>
-    </header>
-
-  <div id="contenedor_principal">
-
-
-    <div id="banner" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="2000">
-      <div class="contenido_imagen_fondo">
-        <img src="./assets/Machu-Picchu.jpg" alt="Machu-Picchu" class="imagen_fondo">
-        <div class="imagen_titulo">
-          <h1 id="titulo_principal">¡Descubre las maravillas del Perú!</h1>
-        </div>
-      </div>
-    </div>
-
-    <aside id="aside_left">
-
-    </aside>
-
-    <section id="contenido">
-
-      <div class="contenido_principal">
-        <div class="seccion__titulo">
-          <h1 class="titulo">Perú en el mundo</h1>
-          <p class="subtitulo">Maravíllate con la diversidad de nuestra riqueza natural, cultural e histórica.
-          </p>
-        </div>
-        <div id="contenedor_mapa">
-          <iframe class="mapa"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8065928.748978428!2d-79.51510158241177!3d-9.20472180304426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c850c05914f5%3A0xf29e011279210648!2zUGVyw7o!5e0!3m2!1ses-419!2spe!4v1652216348579!5m2!1ses-419!2spe"
-            loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-          </iframe>
-        </div>
-      </div>
-
-    </section>
-
-    <aside id="aside_right">
-
-    </aside>
-
-
-  </div>
-
-    <footer>
-
-      <div class="contenedor_footer">
-        <p>
-          Copyright © Promperu - David Sanchez
-        </p>
-        <ul class="redes_sociales_banner">
-          <li><a href="https://www.instagram.com/ytuqueplanes/" target="_blank"><img src="/assets/iconos/instagram.png"
-                alt="instagram" class="svg"></a>
-          </li>
-          <li><a href="https://www.facebook.com/ytuqueplanes/" target="_blank"><img src="/assets/iconos/facebook.png"
-                alt="facebook" class="svg"></a>
-          </li>
-          <li><a href="https://twitter.com/ConoceelPeru" target="_blank"><img src="/assets/iconos/twitter.png"
-                alt="twitter" class="svg"></a>
-          </li>
-          <li><a href="https://www.youtube.com/visitperu" target="_blank"><img src="/assets/iconos/youtube.png"
-                alt="youtube" class="svg"></a>
-          </li>
-        </ul>
-      </div>
-
-    </footer>
-  
-  -->
-
 
 </body>
 
