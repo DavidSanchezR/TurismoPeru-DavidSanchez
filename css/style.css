@@ -469,7 +469,7 @@ a.nav-link:hover {
     height: 70px;
 }
 
-.btn{
+.btn-borde{
     border-color: #D52B1E;
     font-family: 'Open Sans', sans-serif;
     font-weight: 500;
@@ -477,7 +477,7 @@ a.nav-link:hover {
     color: #D52B1E;
 }
 
-.btn:hover{
+.btn-borde:hover{
     background-color: #D52B1E;
     color: white;
 }
@@ -486,4 +486,12 @@ a.nav-link:hover {
     display: flex;
     flex-direction: row;
     justify-content: end;
+}
+
+.btn-danger{
+    background-color: #D52B1E!;
+}
+
+.btn-warning{
+    color: white;
 }
