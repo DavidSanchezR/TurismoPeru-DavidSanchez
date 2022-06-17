@@ -1,0 +1,26 @@
+{
+  "name": "desafio-04-david-sanchez",
+  "version": "1.0.0",
+  "description": "Proyecto del curos de Desarrollo Web",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss sass/main.scss css/main-turismo.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DavidSanchezR/TurismoPeru-DavidSanchez.git"
+  },
+  "author": "David Sanchez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DavidSanchezR/TurismoPeru-DavidSanchez/issues"
+  },
+  "homepage": "https://github.com/DavidSanchezR/TurismoPeru-DavidSanchez#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodeman": "^1.1.2",
+    "nodemon": "^2.0.16"
+  }
+}
