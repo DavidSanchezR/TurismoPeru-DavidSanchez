@@ -118,24 +118,7 @@ fieldset label {
 
 /* Fin de Estilos de Contáctanos */
 
-a.nav-link {
-    text-align: center;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 700;
-    font-size: 1rem;
-    margin: 0 0.8rem;
-    color: black;
-}
 
-a.nav-link:hover {
-    color: #D52B1E;
-}
-
-.logo_pie {
-    display: inline-block;
-    width: 120px;
-    height: 70px;
-}
 
 .btn-borde{
     border-color: #D52B1E;
