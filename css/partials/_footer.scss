@@ -1,6 +1,10 @@
 
 .footer__logo{
-    margin-bottom: 0rem;
+    margin-left: 1rem;
+
+    &__copyright{
+        margin-left: -1rem;
+    }
 
     &__imagen {
         display: inline-block;
@@ -8,5 +12,3 @@
         height: 70px;
     }
 }
-
-

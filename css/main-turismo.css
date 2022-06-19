@@ -5,7 +5,9 @@
   box-sizing: border-box; }
 
 .footer__logo {
-  margin-bottom: 0rem; }
+  margin-left: 1rem; }
+  .footer__logo__copyright {
+    margin-left: -1rem; }
   .footer__logo__imagen {
     display: inline-block;
     width: 120px;
@@ -188,6 +190,6 @@ a.nav-link:hover {
   .navbar-toggler:focus {
     border-color: #D52B1E; }
   .footer__logo {
-    margin-bottom: 1rem; }
+    margin-bottom: 1.2rem; }
   .footer__logo__imagen {
     display: none; } }
