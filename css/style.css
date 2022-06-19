@@ -120,29 +120,3 @@ fieldset label {
 
 
 
-.btn-borde{
-    border-color: #D52B1E;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 500;
-    font-size: 1rem;
-    color: #D52B1E;
-}
-
-.btn-borde:hover{
-    background-color: #D52B1E;
-    color: white;
-}
-
-.contenedor__boton{
-    display: flex;
-    flex-direction: row;
-    justify-content: end;
-}
-
-.btn-danger{
-    background-color: #D52B1E!;
-}
-
-.btn-warning{
-    color: white;
-}

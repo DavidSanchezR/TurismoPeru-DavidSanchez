@@ -1,8 +1,6 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+@import "../css/partials/variables";
+@import "../css/partials/reset";
+@import "../css/partials/footer";
 
 header {
     display: flex;
@@ -36,7 +34,7 @@ header {
 }
 
 footer {
-    background-color: #D52B1E;
+    background-color: $peru-color;
 }
 
 footer span {
@@ -56,7 +54,7 @@ footer span {
 }
 
 .menu :hover {
-    color: #D52B1E;
+    color: $peru-color;
 }
 
 .mapa {
@@ -76,17 +74,36 @@ a.nav-link {
 }
 
 a.nav-link:hover {
-    color: #D52B1E;
-}
-
-.logo_pie {
-    display: inline-block;
-    width: 120px;
-    height: 70px;
+    color: $peru-color;
 }
 
 
+.btn-borde{
+    border-color: $peru-color;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    color: $peru-color;
+}
 
+.btn-borde:hover{
+    background-color: $peru-color;
+    color: white;
+}
+
+.contenedor__boton{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+.btn-danger{
+    background-color: $peru-color;
+}
+
+.btn-warning{
+    color: white;
+}
 
 
 
@@ -124,7 +141,7 @@ a.nav-link:hover {
     }
 
     li a {
-        color: #D52B1E;
+        color: $peru-color;
     }
 
     #titulo_principal {
@@ -225,35 +242,36 @@ a.nav-link:hover {
     footer p {
         font-weight: 500;
         font-size: 1rem;
-        color: #D52B1E;
+        color: $peru-color;
         bottom: 0px;
     }
 
     .navbar-toggler {
-        border-color: #D52B1E;
+        border-color: $peru-color;
     }
 
     .border-danger {
-        border-color: #D52B1E;
-        color: #D52B1E;
+        border-color: $peru-color;
+        color: $peru-color;
     }
 
     .navbar-toggler-icon {
-        color: #D52B1E;
+        color: $peru-color;
     }
 
     .navbar-toggler:focus {
-        border-color: #D52B1E;
+        border-color: $peru-color;
     }
 
-    .logo_pie {
-        width: 60px;
-        height: 35px;
+    .footer__logo{
+        margin-bottom: 1rem;
     }
 
-    footer{
-
+    .footer__logo__imagen{
+        display: none;
     }
+
+
 
 }
 
