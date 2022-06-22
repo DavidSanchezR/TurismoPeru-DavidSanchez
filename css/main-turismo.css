@@ -5,13 +5,21 @@
   box-sizing: border-box; }
 
 .footer__logo {
-  margin-left: 1rem; }
+  margin-left: 1rem;
+  width: max-content; }
   .footer__logo__copyright {
     margin-left: -1rem; }
   .footer__logo__imagen {
     display: inline-block;
     width: 120px;
     height: 70px; }
+
+.footer__redes-sociales {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 2.5rem; }
+  .footer__redes-sociales__item {
+    padding: 0 5px; }
 
 header {
   display: flex;

@@ -1,6 +1,7 @@
 
 .footer__logo{
     margin-left: 1rem;
+    width: max-content;
 
     &__copyright{
         margin-left: -1rem;
@@ -10,5 +11,15 @@
         display: inline-block;
         width: 120px;
         height: 70px;
+    }
+}
+
+.footer__redes-sociales{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 2.5rem;
+
+    &__item{
+        padding: 0 5px;
     }
 }

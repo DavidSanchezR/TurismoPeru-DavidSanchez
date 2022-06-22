@@ -1,6 +1,6 @@
-@import "../css/partials/variables";
-@import "../css/partials/reset";
-@import "../css/partials/footer";
+@import "partials/variables";
+@import "partials/reset";
+@import "partials/footer";
 
 header {
     display: flex;
@@ -62,7 +62,6 @@ footer span {
     width: 750px;
     height: 900px;
 }
-
 
 a.nav-link {
     text-align: center;
