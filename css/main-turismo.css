@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -21,6 +20,31 @@
   .footer__redes-sociales__item {
     padding: 0 5px; }
 
+.video {
+  width: 560px;
+  height: 315px; }
+
+.mapa {
+  width: 750px;
+  height: 900px;
+  border: 0; }
+
+.logo {
+  width: 100px;
+  height: 79px;
+  display: inline-block; }
+
+legend {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  font-size: 1.5rem; }
+
+fieldset label {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  font-size: 1.2rem;
+  margin-left: 20px; }
+
 header {
   display: flex;
   flex-direction: row;
@@ -28,23 +52,19 @@ header {
   width: 100%;
   height: 100%; }
 
-.titulo {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 700;
-  font-size: 3rem;
-  text-align: center; }
-
-.subtitulo {
+.titulo, .subtitulo, .parrafo {
   text-align: center;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 3rem; }
+
+.subtitulo, .parrafo {
   font-weight: 500;
   font-size: 2rem;
   margin: 1rem 0; }
 
 .parrafo {
   text-align: justify;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 500;
   font-size: 1rem;
   margin: 2rem 0; }
 
@@ -52,29 +72,19 @@ footer {
   background-color: #D52B1E; }
 
 footer span {
-  color: white; }
+  color: #ffff; }
 
 .redes_sociales_banner li a svg {
   width: 33px;
   height: 33px;
-  fill: #fff; }
-
-.logo {
-  display: inline-block;
-  width: 100px;
-  height: 79px; }
+  fill: #ffff; }
 
 .menu :hover {
   color: #D52B1E; }
 
-.mapa {
-  border: 0;
-  width: 750px;
-  height: 900px; }
-
 a.nav-link {
   text-align: center;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 700;
   font-size: 1rem;
   margin: 0 0.8rem;
@@ -85,14 +95,14 @@ a.nav-link:hover {
 
 .btn-borde {
   border-color: #D52B1E;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 500;
   font-size: 1rem;
   color: #D52B1E; }
 
 .btn-borde:hover {
   background-color: #D52B1E;
-  color: white; }
+  color: #ffff; }
 
 .contenedor__boton {
   display: flex;
@@ -103,7 +113,28 @@ a.nav-link:hover {
   background-color: #D52B1E; }
 
 .btn-warning {
-  color: white; }
+  color: #ffff; }
+
+.contenedor__mapa iframe,
+.contenedor__experiencia img {
+  transition: all .9s ease;
+  -webkit-transition: all .9s ease;
+  /* Safari y Chrome */
+  -moz-transition: all .9s ease;
+  /* Firefox */
+  -o-transition: all .9s ease;
+  /* IE 9 */
+  -ms-transition: all .9s ease;
+  /* Opera */ }
+
+.contenedor__mapa:hover iframe,
+.contenedor__experiencia:hover img,
+.contenedor__experiencia:focus img {
+  -webkit-transform: scale(0.9);
+  -moz-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  -o-transform: scale(0.9);
+  transform: scale(0.9); }
 
 @media screen and (max-width: 450px) {
   .logo {
@@ -125,11 +156,11 @@ a.nav-link:hover {
     color: #D52B1E; }
   #titulo_principal {
     display: none; }
-  .titulo {
+  .titulo, .subtitulo, .parrafo {
     font-weight: 500;
     font-size: 1.5rem;
     margin-bottom: 1rem; }
-  .subtitulo {
+  .subtitulo, .parrafo {
     font-weight: 300;
     font-size: 1.25rem;
     margin: 1rem 0; }
@@ -146,43 +177,15 @@ a.nav-link:hover {
   .video {
     width: 100%;
     height: 100%; }
-  /* Estilos de Experiencias */
-  .contenedor_experiencia {
-    display: flex;
-    flex-direction: column;
-    margin: 0px 5%; }
-  .experiencia {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between; }
-  .experiencia_titulo {
-    text-align: center;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 500;
-    font-size: 1.5rem; }
-  .experiencia_imagen {
-    width: 100%;
-    height: 440px; }
-  .experiencia_parrafo {
-    text-align: center;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 500;
-    font-size: 1rem; }
-  /* Fin de estilos de Experiencias */
-  /* Estilos de Contáctanos */
-  .contenedor_formulario {
-    width: 90%; }
   legend {
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-weight: 300;
     font-size: 0.8rem; }
   fieldset label {
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-weight: 500;
     font-size: 1rem;
     margin-left: 20px; }
-  /* Fin de Estilos de Contáctanos */
   footer p {
     font-weight: 500;
     font-size: 1rem;

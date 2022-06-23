@@ -1,93 +1,134 @@
-@import "partials/variables";
 @import "partials/reset";
+@import "partials/variables";
+@import "partials/map";
 @import "partials/footer";
+
+@mixin sizes($width, $height){
+    width: $width;
+    height: $height;
+}
+
+@mixin efecto-transicion(){
+    transition: all .9s ease;
+    -webkit-transition: all .9s ease;
+    /* Safari y Chrome */
+    -moz-transition: all .9s ease;
+    /* Firefox */
+    -o-transition: all .9s ease;
+    /* IE 9 */
+    -ms-transition: all .9s ease;
+    /* Opera */
+}
+
+@mixin efecto-zoom() {
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -o-transform: scale(0.9);
+    transform: scale(0.9);
+}
+
+@mixin fuente-formulario(){
+    font-family: $fuente-principal;
+    font-weight: $fuente-mediana;
+}
+
+.video {
+    @include sizes(560px, 315px);
+}
+
+.mapa {
+    @include sizes(750px, 900px);
+    border: 0;
+}
+
+.logo {
+    @include sizes(100px, 79px);
+    display: inline-block;
+}
+
+
+legend {
+    @include fuente-formulario();
+    font-size: 1.5rem;
+}
+
+fieldset label {
+    @include fuente-formulario();
+    font-size: 1.2rem;
+    margin-left: 20px;
+}
 
 header {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    width: 100%;
-    height: 100%;
+    @include sizes(100%, 100%);
 }
 
 .titulo {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 700;
-    font-size: 3rem;
     text-align: center;
+    font-family: $fuente-principal;
+    font-weight: $fuente-pesada;
+    font-size: 3rem;
 }
 
 .subtitulo {
-    text-align: center;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 500;
+    @extend .titulo;
+    font-weight: $fuente-mediana;
     font-size: 2rem;
     margin: 1rem 0;
 }
 
 .parrafo {
+    @extend .subtitulo;
     text-align: justify;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 500;
     font-size: 1rem;
     margin: 2rem 0;
 }
 
 footer {
-    background-color: $peru-color;
+    background-color: map-get($map: $colores-turismo, $key: peru-color);
 }
 
 footer span {
-    color: white;
+    color: map-get($map: $colores-turismo, $key: white-color);
 }
 
 .redes_sociales_banner li a svg {
-    width: 33px;
-    height: 33px;
-    fill: #fff;
-}
-
-.logo {
-    display: inline-block;
-    width: 100px;
-    height: 79px;
+    @include sizes(33px, 33px);
+    fill: map-get($map: $colores-turismo, $key: white-color);
 }
 
 .menu :hover {
-    color: $peru-color;
-}
-
-.mapa {
-    border: 0;
-    width: 750px;
-    height: 900px;
+    color: map-get($map: $colores-turismo, $key: peru-color);
 }
 
 a.nav-link {
     text-align: center;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 700;
+    font-family: $fuente-principal;
+    font-weight: $fuente-pesada;
     font-size: 1rem;
     margin: 0 0.8rem;
     color: black;
 }
 
 a.nav-link:hover {
-    color: $peru-color;
+    color: map-get($map: $colores-turismo, $key: peru-color);
 }
 
 
 .btn-borde{
-    border-color: $peru-color;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 500;
+    border-color: map-get($map: $colores-turismo, $key: peru-color);
+    font-family: $fuente-principal;
+    font-weight: $fuente-mediana;
     font-size: 1rem;
-    color: $peru-color;
+    color: map-get($map: $colores-turismo, $key: peru-color);
 }
 
 .btn-borde:hover{
-    background-color: $peru-color;
-    color: white;
+    background-color: map-get($map: $colores-turismo, $key: peru-color);
+    color: map-get($map: $colores-turismo, $key: white-color);
 }
 
 .contenedor__boton{
@@ -97,24 +138,30 @@ a.nav-link:hover {
 }
 
 .btn-danger{
-    background-color: $peru-color;
+    background-color: map-get($map: $colores-turismo, $key: peru-color);
 }
 
 .btn-warning{
-    color: white;
+    color: map-get($map: $colores-turismo, $key: white-color);
 }
 
 
+.contenedor__mapa iframe,
+.contenedor__experiencia img {
+    @include efecto-transicion;
+}
 
-
-
+.contenedor__mapa:hover iframe,
+.contenedor__experiencia:hover img,
+.contenedor__experiencia:focus img  {
+    @include efecto-zoom;
+}
 
 @media screen and (max-width: 450px) {
 
     .logo {
         display: inline-block;
-        width: 50px;
-        height: 79px;
+        @include sizes(50px, 79px);
     }
 
 
@@ -131,7 +178,7 @@ a.nav-link:hover {
     }
 
     ul {
-        font-weight: 500;
+        font-weight: $fuente-mediana;
         font-size: 0.75rem;
     }
 
@@ -140,7 +187,7 @@ a.nav-link:hover {
     }
 
     li a {
-        color: $peru-color;
+        color: map-get($map: $colores-turismo, $key: peru-color);
     }
 
     #titulo_principal {
@@ -148,13 +195,13 @@ a.nav-link:hover {
     }
 
     .titulo {
-        font-weight: 500;
+        font-weight: $fuente-mediana;
         font-size: 1.5rem;
         margin-bottom: 1rem;
     }
 
     .subtitulo {
-        font-weight: 300;
+        font-weight: $fuente-liviana;
         font-size: 1.25rem;
         margin: 1rem 0;
     }
@@ -164,102 +211,81 @@ a.nav-link:hover {
     }
 
     .parrafo {
-        font-weight: 300;
+        font-weight: $fuente-liviana;
         font-size: 1rem;
         margin: 0.5rem 0;
     }
 
     .mapa {
         border: 0;
-        width: 100%;
-        height: 350px;
+        @include sizes(100%, 350px);
     }
 
     .video {
-        width: 100%;
-        height: 100%;
+        @include sizes(100%, 100%);
     }
 
+    // .experiencia {
+    //     width: 100%;
+    //     display: flex;
+    //     flex-direction: column;
+    //     justify-content: space-between;
+    // }
 
-    /* Estilos de Experiencias */
+    // .experiencia_titulo {
+    //     text-align: center;
+    //     font-family: $fuente-principal;
+    //     font-weight: 500;
+    //     font-size: 1.5rem;
+    // }
 
-    .contenedor_experiencia {
-        display: flex;
-        flex-direction: column;
-        margin: 0px 5%;
-    }
+    // .experiencia_imagen {
+    //     width: 100%;
+    //     height: 440px;
+    // }
 
-    .experiencia {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-
-    .experiencia_titulo {
-        text-align: center;
-        font-family: 'Open Sans', sans-serif;
-        font-weight: 500;
-        font-size: 1.5rem;
-    }
-
-    .experiencia_imagen {
-        width: 100%;
-        height: 440px;
-    }
-
-    .experiencia_parrafo {
-        text-align: center;
-        font-family: 'Open Sans', sans-serif;
-        font-weight: 500;
-        font-size: 1rem;
-    }
-
-    /* Fin de estilos de Experiencias */
-
-    /* Estilos de Contáctanos */
-
-    .contenedor_formulario {
-        width: 90%;
-    }
+    // .experiencia_parrafo {
+    //     text-align: center;
+    //     font-family: $fuente-principal;
+    //     font-weight: 500;
+    //     font-size: 1rem;
+    // }
 
     legend {
-        font-family: 'Open Sans', sans-serif;
-        font-weight: 300;
+        font-family: $fuente-principal;
+        font-weight: $fuente-liviana;
         font-size: 0.8rem;
     }
 
     fieldset label {
-        font-family: 'Open Sans', sans-serif;
-        font-weight: 500;
+        font-family: $fuente-principal;
+        font-weight: $fuente-mediana;
         font-size: 1rem;
         margin-left: 20px;
     }
 
-    /* Fin de Estilos de Contáctanos */
-
     footer p {
-        font-weight: 500;
+        font-weight: $fuente-mediana;
         font-size: 1rem;
-        color: $peru-color;
+        color: map-get($map: $colores-turismo, $key: peru-color);
         bottom: 0px;
     }
 
     .navbar-toggler {
-        border-color: $peru-color;
+        border-color: map-get($map: $colores-turismo, $key: peru-color);
     }
 
     .border-danger {
-        border-color: $peru-color;
-        color: $peru-color;
+        border-color: map-get($map: $colores-turismo, $key: peru-color);
+        color: map-get($map: $colores-turismo, $key: peru-color);
     }
 
     .navbar-toggler-icon {
-        color: $peru-color;
+        color: map-get($map: $colores-turismo, $key: peru-color);
     }
 
     .navbar-toggler:focus {
-        border-color: $peru-color;
+        border-color: map-get($map: $colores-turismo, $key: peru-color);
     }
 
     .footer__logo{
