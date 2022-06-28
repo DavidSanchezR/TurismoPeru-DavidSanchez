@@ -117,7 +117,6 @@ a.nav-link:hover {
     color: map-get($map: $colores-turismo, $key: peru-color);
 }
 
-
 .btn-borde{
     border-color: map-get($map: $colores-turismo, $key: peru-color);
     font-family: $fuente-principal;
@@ -144,7 +143,6 @@ a.nav-link:hover {
 .btn-warning{
     color: map-get($map: $colores-turismo, $key: white-color);
 }
-
 
 .contenedor__mapa iframe,
 .contenedor__experiencia img {
@@ -225,32 +223,6 @@ a.nav-link:hover {
         @include sizes(100%, 100%);
     }
 
-    // .experiencia {
-    //     width: 100%;
-    //     display: flex;
-    //     flex-direction: column;
-    //     justify-content: space-between;
-    // }
-
-    // .experiencia_titulo {
-    //     text-align: center;
-    //     font-family: $fuente-principal;
-    //     font-weight: 500;
-    //     font-size: 1.5rem;
-    // }
-
-    // .experiencia_imagen {
-    //     width: 100%;
-    //     height: 440px;
-    // }
-
-    // .experiencia_parrafo {
-    //     text-align: center;
-    //     font-family: $fuente-principal;
-    //     font-weight: 500;
-    //     font-size: 1rem;
-    // }
-
     legend {
         font-family: $fuente-principal;
         font-weight: $fuente-liviana;
@@ -295,8 +267,6 @@ a.nav-link:hover {
     .footer__logo__imagen{
         display: none;
     }
-
-
 
 }
 
